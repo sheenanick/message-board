@@ -1,4 +1,18 @@
-{{#each answers as |answer|}}
-  <p>{{answer.answer}}</p>
-  <h6>By {{answer.author}}</h6>
-{{/each}}
+<div class="table-responsive">
+  <table class="table table-hover table-striped table-bordered">
+     <thead>
+       <tr>
+         <th>Author</th>
+         <th>Answer</th>
+       </tr>
+     </thead>
+     <tbody>
+       {{#each answers as |answer|}}
+         <tr>
+           <td>{{answer.author}}</td>
+           <td>{{answer.answer}}</td>
+         </tr>
+       {{/each}}
+     </tbody>
+   </table>
+</div>
