@@ -6,12 +6,12 @@
       {{input value=question class="form-control"}}
     </div>
     <div class="form-group">
-      <label for="author">Author:</label>
-      {{input value=author class="form-control"}}
-    </div>
-    <div class="form-group">
       <label for="notes">Additional Notes:</label>
       {{input value=notes class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input value=author class="form-control"}}
     </div>
     <button class="btn btn-secondary" {{action 'saveQuestion'}}>Submit</button>
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
