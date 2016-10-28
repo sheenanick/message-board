@@ -14,6 +14,9 @@ export default Ember.Component.extend({
       };
       this.set('showNewQuestionForm', false);
       this.sendAction('saveQuestion', params);
+    },
+    cancel() {
+      this.set('showNewQuestionForm', false);
     }
   }
 });
