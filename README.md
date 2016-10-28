@@ -1,7 +1,24 @@
 # Message-board
 
+#### _Epicodus JavaScript Week 1 Independent Project, 10.14.2016_
+
+#### By Sheena Nickerson
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
+
+## Description
+
+This is a question and answer message board application where a user submits a question and other users can respond with answers.
+
+##Technical Specifications
+
+| Behavior                                | Example Input                                                                                                | Example Output |
+|-----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------|
+| Create new question based on form input | question: 'How do I change my mailing address?', author: 'John', notes: 'I moved after purchasing tickets.'  | same as input  |
+| List all questions                      | list all                                                                                                     | all questions  |
+| Create answers based on form input      | answer: 'Check the FAQ page.', author: 'Jane'                                                                | same as input  |
+| Edit questions                          | notes: 'I moved after purchasing tickets and I can no longer sign in with my FB.'                            | same as input  |
 
 ## Prerequisites
 
@@ -15,7 +32,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/sheenanick/message-board` this repository
 * `cd message-board`
 * `npm install`
 * `bower install`
@@ -39,9 +56,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Support and Contact Details
 
-Specify what it takes to deploy your app.
+Please feel free to contact me at sheenanick@gmail.com if you have any issues or questions, ideas or concerns.
 
 ## Further Reading / Useful Links
 
@@ -51,3 +68,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+### License
+
+Licensed under GPL.
+
+Copyright (c) 2016 **_Sheena Nickerson_**
