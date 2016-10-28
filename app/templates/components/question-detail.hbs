@@ -3,3 +3,6 @@
 <p>{{question.notes}}</p>
 
 {{new-answer question=question saveAnswer='saveAnswer'}}
+{{#if question.answers}}
+  {{answer-tile answers=question.answers}}
+{{/if}}
