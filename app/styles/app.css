@@ -8,13 +8,21 @@ nav a:hover {
 }
 
 thead {
-  background-color: #192549;
+  background-color: #3F4096;
   color: #F8FFFA;
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 #banner {
