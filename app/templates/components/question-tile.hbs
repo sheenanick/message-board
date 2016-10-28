@@ -1,4 +1,18 @@
-{{#link-to 'question' question.id}}
-  <h4>{{question.content}}</h4>
-{{/link-to}}
-<h6>By {{question.author}}</h6>
+<div class="table-responsive">
+  <table class="table table-hover table-striped table-bordered">
+     <thead>
+       <tr>
+         <th>Author</th>
+         <th>Question</th>
+       </tr>
+     </thead>
+     <tbody>
+       {{#each questions as |question|}}
+         <tr>
+           <td>{{question.author}}</td>
+           <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
+         </tr>
+       {{/each}}
+     </tbody>
+   </table>
+</div>
