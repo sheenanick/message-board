@@ -30,6 +30,6 @@ form {
   width: 100%;
 }
 
-#addQuestion {
+#addQuestion, #answerQuestion {
   margin-bottom: 20px;
 }
