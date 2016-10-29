@@ -9,9 +9,9 @@
       <label for="author">Author:</label>
       {{input value=author class="form-control"}}
     </div>
-    <button class="btn btn-secondary" {{action 'saveAnswer'}}>Submit</button>
+    <button class="btn btn-primary" {{action 'saveAnswer'}}>Submit</button>
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
   </form>
 {{else}}
-  <button id="answerQuestion" class="btn btn-primary" {{action 'showNewAnswerForm'}}>Answer this question</button>
+  <button id="answerQuestion" class="btn btn-info" {{action 'showNewAnswerForm'}}>Answer this question</button>
 {{/if}}

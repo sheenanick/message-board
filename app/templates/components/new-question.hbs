@@ -13,9 +13,9 @@
       <label for="author">Author:</label>
       {{input value=author class="form-control"}}
     </div>
-    <button class="btn btn-secondary" {{action 'saveQuestion'}}>Submit</button>
+    <button class="btn btn-primary" {{action 'saveQuestion'}}>Submit</button>
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
   </form>
 {{else}}
-  <button id="addQuestion" class="btn" {{action 'showNewQuestionForm'}}>Add New Question</button>
+  <button id="addQuestion" class="btn btn-info" {{action 'showNewQuestionForm'}}>Add New Question</button>
 {{/if}}
