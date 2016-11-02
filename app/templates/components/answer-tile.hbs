@@ -4,6 +4,7 @@
        <tr>
          <th>Author</th>
          <th>Answer</th>
+         <th>Settings</th>
        </tr>
      </thead>
      <tbody>
@@ -11,6 +12,9 @@
          <tr>
            <td>{{answer.author}}</td>
            <td>{{answer.answer}}</td>
+           <td>
+             <button class="btn btn-danger btn-xs" {{action 'deleteAnswer' question answer}}>Delete</button>
+           </td>
          </tr>
        {{/each}}
      </tbody>
