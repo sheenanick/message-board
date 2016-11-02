@@ -4,6 +4,7 @@
        <tr>
          <th>Author</th>
          <th>Question</th>
+         <th></th>
        </tr>
      </thead>
      <tbody>
@@ -11,6 +12,9 @@
          <tr>
            <td>{{question.author}}</td>
            <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
+           <td>
+             <button class="btn btn-danger btn-xs" {{action 'deleteQuestion' question}}>Delete</button>             
+           </td>
          </tr>
        {{/each}}
      </tbody>
