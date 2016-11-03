@@ -1,8 +1,8 @@
-nav a {
-  color: #e6e6e6;
+nav a, nav .container-fluid .collapse ul a {
+  color: #cacbce;
 }
 
-nav a:hover {
+nav a:hover, nav .container-fluid .collapse ul a:hover {
   color: #ffffff;
   text-decoration: none;
 }
@@ -16,11 +16,6 @@ form {
   margin-bottom: 20px;
 }
 
-.navbar {
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
 .container {
   margin-bottom: 20px;
 }
@@ -32,8 +27,25 @@ form {
   margin-bottom: 20px;
 }
 
-#banner {
-  width: 100%;
+.header {
+  background-image: url("/img/banner.jpg");
+  background-size: cover;
+  padding: 35px 0 220px;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: #11162C;
+  border-top: 1px solid #7E8089;
+  border-left: none;
+  border-right: none;
+}
+
+#logo {
+  height: 50px;
+  display: block;
+  margin: auto;
 }
 
 #addQuestion, #answerQuestion {
