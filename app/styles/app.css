@@ -12,19 +12,17 @@ thead {
   color: #F8FFFA;
 }
 
+th {
+  text-align: center;
+}
+
 form {
   margin-bottom: 20px;
 }
 
 .container {
   margin-bottom: 20px;
-}
-
-.question-detail {
-  border: solid 1px #212560;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 20px;
+  width: 75%;
 }
 
 .header {
@@ -42,6 +40,13 @@ form {
   border-right: none;
 }
 
+.question-detail {
+  border: solid 1px #212560;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 #logo {
   height: 50px;
   display: block;
@@ -50,4 +55,10 @@ form {
 
 #addQuestion, #answerQuestion {
   margin-bottom: 20px;
+}
+
+#delete {
+  max-width: 20px;
+  display: block;
+  margin: auto;
 }

@@ -1,22 +1,24 @@
-<div class="table-responsive">
-  <table class="table table-hover table-striped table-bordered">
-     <thead>
-       <tr>
-         <th>Author</th>
-         <th>Question</th>
-         <th></th>
-       </tr>
-     </thead>
-     <tbody>
-       {{#each questions as |question|}}
+<div class="well table-well">
+  <div class="table-responsive">
+    <table class="table table-hover table-striped table-bordered">
+       <thead>
          <tr>
-           <td>{{question.author}}</td>
-           <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
-           <td>
-             <button class="btn btn-danger btn-xs" {{action 'deleteQuestion' question}}>Delete</button>             
-           </td>
+           <th>Author</th>
+           <th>Question</th>
+           <th>Delete</th>
          </tr>
-       {{/each}}
-     </tbody>
-   </table>
+       </thead>
+       <tbody>
+         {{#each questions as |question|}}
+           <tr>
+             <td>{{question.author}}</td>
+             <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
+             <td>
+               <img id="delete" src="/img/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
+             </td>
+           </tr>
+         {{/each}}
+       </tbody>
+     </table>
+  </div>
 </div>
