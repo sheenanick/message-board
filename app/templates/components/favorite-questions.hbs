@@ -1,0 +1,7 @@
+{{#if myFavorites.questions}}
+  {{#each myFavorites.questions as |question|}}
+    <h4>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} Posted By {{question.author}}</h4>
+  {{/each}}
+{{else}}
+  <p>No favorites - click on the star symbol next to questions to add them to your favorites list!</p>
+{{/if}}
