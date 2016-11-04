@@ -18,12 +18,14 @@ export default Ember.Component.extend({
         this.set('error', true);
         this.sendAction('emptyInput', params.question);
       } else {
-        this.set('showNewAnswerForm', false);
-        this.set('error', false);
+        this.send('cancel');
         this.sendAction('saveAnswer', params);
       }
     },
     cancel() {
+      this.set('error', false);
+      this.set('answer', "");
+      this.set('author', "");
       this.set('showNewAnswerForm', false);
     }
   }
