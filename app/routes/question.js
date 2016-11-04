@@ -25,7 +25,7 @@ export default Ember.Route.extend({
     },
     deleteAnswer(question, answer) {
       answer.destroyRecord();
-      this.transitionTo('quesiton', question);
+      this.transitionTo('question', question);
     },
     deleteQuestion(question) {
       var answers = question.get('answers').map(function(answer) {
@@ -36,19 +36,19 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
-    upVote(question) {
-      var votes = question.get('votes');
+    upVote(answer) {
+      var votes = answer.get('votes');
       votes += 1;
-      question.set('votes', votes);
-      question.save();
-      this.transitionTo('quesiton', question);
+      answer.set('votes', votes);
+      answer.save();
+      this.transitionTo('question', answer.get('question'));
     },
-    downVote(question) {
-      var votes = question.get('votes');
+    downVote(answer) {
+      var votes = answer.get('votes');
       votes -= 1;
-      question.set('votes', votes);
-      question.save();
-      this.transitionTo('quesiton', question);
+      answer.set('votes', votes);
+      answer.save();
+      this.transitionTo('question', answer.get('question'));
     },
     emptyInput(question) {
       this.transitionTo('question', question);

@@ -13,6 +13,9 @@
     <button class="btn btn-primary" {{action 'saveAnswer'}}>Submit</button>
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
   </form>
+  {{#if error}}
+    <h6 class="error">Please fill out all fields.</h6>
+  {{/if}}
 </div>
 {{else}}
   <button id="answerQuestion" class="btn btn-info" {{action 'showNewAnswerForm'}}>Answer this question</button>

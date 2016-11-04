@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   showNewAnswerForm: false,
+  error: false,
   actions: {
     showNewAnswerForm() {
       this.set('showNewAnswerForm', true);
@@ -14,9 +15,11 @@ export default Ember.Component.extend({
         votes: 0
       };
       if(params.answer === undefined || params.author === undefined || params.question === undefined) {
+        this.set('error', true);
         this.sendAction('emptyInput', params.question);
       } else {
         this.set('showNewAnswerForm', false);
+        this.set('error', false);
         this.sendAction('saveAnswer', params);
       }
     },
