@@ -16,5 +16,6 @@
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
   </form>
 {{else}}
-  <button class="btn btn-warning" {{action 'showEditQuestionForm'}}>Edit</button>
+  <button class="btn btn-warning btn-sm" {{action 'showEditQuestionForm'}}>Edit</button>
+  <button class="btn btn-danger btn-sm" {{action 'deleteQuestion' question}}>Delete</button>
 {{/if}}
