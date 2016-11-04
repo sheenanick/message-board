@@ -1,6 +1,6 @@
-# Message-board
+# Message-Board
 
-#### _Epicodus JavaScript Week 1 Independent Project, 10.14.2016_
+#### _Epicodus JavaScript Week 3 & 4 Independent Project, 11.04.2016_
 
 #### By Sheena Nickerson
 
