@@ -88,6 +88,10 @@ form {
   color: #f00;
 }
 
+.fav-question {
+  font-size: 16px;
+}
+
 #logo {
   height: 35px;
   display: block;
