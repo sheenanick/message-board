@@ -34,7 +34,21 @@ export default Ember.Route.extend({
       Ember.RSVP.all(answers).then(function() {
         return question.destroyRecord();
       });
-        this.transitionTo('index');
-      }
+      this.transitionTo('index');
+    },
+    upVote(question) {
+      var votes = question.get('votes');
+      votes += 1;
+      question.set('votes', votes);
+      question.save();
+      this.transitionTo('quesiton', question);
+    },
+    downVote(question) {
+      var votes = question.get('votes');
+      votes -= 1;
+      question.set('votes', votes);
+      question.save();
+      this.transitionTo('quesiton', question);
+    }
   }
 });

@@ -6,5 +6,5 @@
 </div>
 {{new-answer question=question saveAnswer='saveAnswer'}}
 {{#if question.answers}}
-  {{answer-tile answers=question.answers question=question deleteAnswer='deleteAnswer'}}
+  {{answer-tile answers=question.answers question=question deleteAnswer='deleteAnswer' upVote='upVote' downVote='downVote'}}
 {{/if}}

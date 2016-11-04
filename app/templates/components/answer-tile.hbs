@@ -13,9 +13,9 @@
          {{#each answers as |answer|}}
            <tr>
              <td class="rank">
-               <img class="arrows" src="/icons/up.svg" alt="up arrow"/>
+               <img class="arrows" src="/icons/up.svg" alt="up arrow" {{action 'upVote' answer}}/>
                {{answer.votes}}
-               <img class="arrows" src="/icons/down.svg" alt="down arrow"/>
+               <img class="arrows" src="/icons/down.svg" alt="down arrow" {{action 'downVote' answer}}/>
              </td>
              <td>{{answer.author}}</td>
              <td>{{answer.answer}}</td>

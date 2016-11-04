@@ -13,6 +13,12 @@ export default Ember.Component.extend({
     },
     deleteQuestion(question) {
       this.sendAction('deleteQuestion', question);
+    },
+    upVote(answer) {
+      this.sendAction('upVote', answer);
+    },
+    downVote(answer) {
+      this.sendAction('downVote', answer);
     }
   }
 });
