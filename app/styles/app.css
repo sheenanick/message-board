@@ -53,6 +53,10 @@ form {
   margin-bottom: 0;
 }
 
+.star {
+  max-width: 30px;
+}
+
 .question-detail {
   border: solid 1px #212560;
   border-radius: 4px;

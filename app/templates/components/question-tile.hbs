@@ -14,9 +14,9 @@
           <tr>
             <td {{action 'toggleFavorites' question}}>
               {{#if question.favorite}}
-                <img src="/icons/star-yellow.svg" alt="star icon" />
+                <img class="star" src="/icons/star-yellow.svg" alt="star icon" />
               {{else}}
-                <img src="/icons/star.svg" alt="star icon" />
+                <img class="star" src="/icons/star.svg" alt="star icon" />
               {{/if}}
             </td>
             <td>{{question.author}}</td>
