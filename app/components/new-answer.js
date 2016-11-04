@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         question: this.get('question'),
         votes: 0
       };
-      if(params.answer === undefined || params.author === undefined || params.question === undefined) {
+      if(params.answer === undefined || params.author === undefined || params.answer === "" || params.author === "") {
         this.set('error', true);
         this.sendAction('emptyInput', params.question);
       } else {
