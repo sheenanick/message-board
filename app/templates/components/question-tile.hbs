@@ -12,7 +12,7 @@
          {{#each questions as |question|}}
            <tr>
              <td>{{question.author}}</td>
-             <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
+             <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <em>{{answer-number question.answers.length}}</em></td>
              <td>
                <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
              </td>
