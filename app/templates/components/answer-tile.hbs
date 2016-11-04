@@ -3,6 +3,7 @@
     <table class="table table-hover table-striped table-bordered">
        <thead>
          <tr>
+           <th>Votes</th>
            <th>Author</th>
            <th>Answer</th>
            <th>Delete</th>
@@ -11,6 +12,11 @@
        <tbody>
          {{#each answers as |answer|}}
            <tr>
+             <td class="rank">
+               <img class="arrows" src="/icons/up.svg" alt="up arrow"/>
+               {{answer.votes}}
+               <img class="arrows" src="/icons/down.svg" alt="down arrow"/>
+             </td>
              <td>{{answer.author}}</td>
              <td>{{answer.answer}}</td>
              <td>

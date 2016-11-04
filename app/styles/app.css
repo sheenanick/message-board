@@ -60,7 +60,7 @@ form {
   margin-bottom: 20px;
 }
 
-.delete, .star {
+.delete, .star, .arrows {
   max-width: 20px;
   display: block;
   margin: auto;
@@ -78,6 +78,10 @@ form {
 .subtitle {
   text-align: center;
   margin: 0;
+}
+
+.rank {
+  text-align: center;
 }
 
 #logo {
