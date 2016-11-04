@@ -12,5 +12,8 @@
     <label for="author">Author:</label>
     {{input value=author class="form-control"}}
   </div>
+  {{#if error}}
+    <h6 class="error">Please fill in all fields.</h6>
+  {{/if}}
   <button class="btn btn-primary btn-center" {{action 'saveQuestion'}}>Submit</button>
 </form>

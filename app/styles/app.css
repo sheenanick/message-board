@@ -84,6 +84,10 @@ form {
   text-align: center;
 }
 
+.error {
+  color: #f00;
+}
+
 #logo {
   height: 35px;
   display: block;
