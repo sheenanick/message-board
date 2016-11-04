@@ -6,8 +6,15 @@ export default Ember.Component.extend({
     deleteQuestion(question) {
       this.sendAction('deleteQuestion', question);
     },
-    addToFavorites(question) {
-      this.get('myFavorites').add(question);
+    toggleFavorites(question) {
+      var myFavorites = this.get('myFavorites');
+      if (myFavorites.questions.includes(question)) {
+        myFavorites.remove(question);
+        question.set('favorite', false);
+      } else {
+        myFavorites.add(question);
+        question.set('favorite', true);
+      }
     }
   }
 });

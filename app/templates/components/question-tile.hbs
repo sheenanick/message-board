@@ -1,26 +1,32 @@
 <div class="well table-well">
   <div class="table-responsive">
     <table class="table table-hover table-striped table-bordered">
-       <thead>
-         <tr>
-           <th>Star</th>
-           <th>Author</th>
-           <th>Question</th>
-           <th>Delete</th>
-         </tr>
-       </thead>
-       <tbody>
-         {{#each questions as |question|}}
-           <tr>
-             <td><img src="/icons/star.svg" alt="star icon" {{action 'addToFavorites' question}}/></td>
-             <td>{{question.author}}</td>
-             <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <em>{{answer-number question.answers.length}}</em></td>
-             <td>
-               <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
-             </td>
-           </tr>
-         {{/each}}
-       </tbody>
-     </table>
+      <thead>
+        <tr>
+          <th>Star</th>
+          <th>Author</th>
+          <th>Question</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each questions as |question|}}
+          <tr>
+            <td {{action 'toggleFavorites' question}}>
+              {{#if question.favorite}}
+                <img src="/icons/star-yellow.svg" alt="star icon" />
+              {{else}}
+                <img src="/icons/star.svg" alt="star icon" />
+              {{/if}}
+            </td>
+            <td>{{question.author}}</td>
+            <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <em>{{answer-number question.answers.length}}</em></td>
+            <td>
+              <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   </div>
 </div>
