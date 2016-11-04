@@ -1,5 +1,6 @@
 {{#if showNewAnswerForm}}
-  <h4>Answer this question</h4>
+<div class="well">
+  <h4 class="subtitle">Answer this question</h4>
   <form>
     <div class="form-group">
       <label for="answer">Answer:</label>
@@ -12,6 +13,7 @@
     <button class="btn btn-primary" {{action 'saveAnswer'}}>Submit</button>
     <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
   </form>
+</div>
 {{else}}
   <button id="answerQuestion" class="btn btn-info" {{action 'showNewAnswerForm'}}>Answer this question</button>
 {{/if}}

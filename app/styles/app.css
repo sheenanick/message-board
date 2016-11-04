@@ -66,8 +66,18 @@ form {
   margin: auto;
 }
 
+.btn-center {
+  display: block;
+  margin: auto;
+}
+
 .general-faq h4 {
   color: #324081;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0;
 }
 
 #logo {
