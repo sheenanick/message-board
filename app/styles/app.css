@@ -60,6 +60,12 @@ form {
   margin-bottom: 20px;
 }
 
+.delete {
+  max-width: 20px;
+  display: block;
+  margin: auto;
+}
+
 #logo {
   height: 35px;
   display: block;
@@ -68,10 +74,4 @@ form {
 
 #answerQuestion {
   margin-bottom: 20px;
-}
-
-#delete {
-  max-width: 20px;
-  display: block;
-  margin: auto;
 }

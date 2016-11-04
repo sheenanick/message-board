@@ -14,7 +14,7 @@
              <td>{{question.author}}</td>
              <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</td>
              <td>
-               <img id="delete" src="/img/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
+               <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteQuestion' question}}/>
              </td>
            </tr>
          {{/each}}
