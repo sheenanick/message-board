@@ -51,7 +51,7 @@ export default Ember.Route.extend({
       this.transitionTo('quesiton', question);
     },
     emptyInput(question) {
-      this.transitionTo('question' question)
+      this.transitionTo('question', question);
     }
   }
 });
