@@ -10,7 +10,8 @@ export default Ember.Component.extend({
       var params = {
         answer: this.get('answer'),
         author: this.get('author'),
-        question: this.get('question')
+        question: this.get('question'),
+        votes: 0
       };
       this.set('showNewAnswerForm', false);
       this.sendAction('saveAnswer', params);
