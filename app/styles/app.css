@@ -66,6 +66,10 @@ form {
   margin: auto;
 }
 
+.general-faq h4 {
+  color: #324081;
+}
+
 #logo {
   height: 35px;
   display: block;
