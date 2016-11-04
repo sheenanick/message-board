@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  favorites: [],
+  questions: [],
   add(question) {
-    this.get('favorites').pushObject('question');
-    console.log(this.get('favorites'));
+    this.get('questions').pushObject(question);
+    console.log(this.get('questions')[0]);
   }
 });
