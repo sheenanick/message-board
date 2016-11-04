@@ -44,6 +44,15 @@ form {
   border-right: none;
 }
 
+.title {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
 .question-detail {
   border: solid 1px #212560;
   border-radius: 4px;
@@ -57,12 +66,7 @@ form {
   margin: auto;
 }
 
-#index-title {
-  text-align: center;
-  margin-top: 0;
-}
-
-#addQuestion, #answerQuestion {
+#answerQuestion {
   margin-bottom: 20px;
 }
 
