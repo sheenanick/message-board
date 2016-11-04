@@ -49,6 +49,9 @@ export default Ember.Route.extend({
       question.set('votes', votes);
       question.save();
       this.transitionTo('quesiton', question);
+    },
+    emptyInput(question) {
+      this.transitionTo('question' question)
     }
   }
 });

@@ -13,8 +13,12 @@ export default Ember.Component.extend({
         question: this.get('question'),
         votes: 0
       };
-      this.set('showNewAnswerForm', false);
-      this.sendAction('saveAnswer', params);
+      if(params.answer === undefined || params.author === undefined || params.question === undefined) {
+        this.sendAction('emptyInput', params.question);
+      } else {
+        this.set('showNewAnswerForm', false);
+        this.sendAction('saveAnswer', params);
+      }
     },
     cancel() {
       this.set('showNewAnswerForm', false);

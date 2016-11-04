@@ -8,7 +8,11 @@ export default Ember.Component.extend({
         author: this.get('author'),
         notes: this.get('notes')
       };
-      this.sendAction('saveQuestion', params);
+      if (params.content === undefined || params.author === undefined || params.notes === undefined) {
+        this.sendAction('emptyInput');
+      } else {
+        this.sendAction('saveQuestion', params);
+      }
     }
   }
 });
