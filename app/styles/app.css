@@ -57,6 +57,11 @@ form {
   margin: auto;
 }
 
+#index-title {
+  text-align: center;
+  margin-top: 0;
+}
+
 #addQuestion, #answerQuestion {
   margin-bottom: 20px;
 }
