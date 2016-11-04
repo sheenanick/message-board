@@ -3,6 +3,7 @@
     <table class="table table-hover table-striped table-bordered">
        <thead>
          <tr>
+           <th>Star</th>
            <th>Author</th>
            <th>Question</th>
            <th>Delete</th>
@@ -11,6 +12,7 @@
        <tbody>
          {{#each questions as |question|}}
            <tr>
+             <td><img src="/icons/star.svg" alt="star icon" {{action 'addToFavorites' question}}/></td>
              <td>{{question.author}}</td>
              <td>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} <em>{{answer-number question.answers.length}}</em></td>
              <td>
