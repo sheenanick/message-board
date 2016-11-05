@@ -1,13 +1,14 @@
-{{#if myFavorites.questions}}
-  {{#each myFavorites.questions as |question|}}
+<div class="well">
+  {{#if myFavorites.questions}}
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
-        {{#link-to 'question' question.id}}<span class="fav-question">{{question.content}}</span>{{/link-to}}
-        Posted By {{question.author}}
+        {{#each myFavorites.questions as |question|}}
+          {{#link-to 'question' question.id}}<span class="fav-question">{{question.content}}</span>{{/link-to}}
+          -- Posted By {{question.author}}<br>
+        {{/each}}
       </div>
-
     </div>
-  {{/each}}
-{{else}}
-  <p class="text-center"><em>You don't have any favorites yet! - click on the star symbol next to questions to add them to your list</em></p>
-{{/if}}
+  {{else}}
+    <p class="text-center"><em>You don't have any favorites yet! - click on the star symbol next to questions to add them to your list</em></p>
+  {{/if}}
+</div>
