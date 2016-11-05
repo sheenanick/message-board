@@ -13,11 +13,11 @@ nav a:hover, nav .container-fluid .collapse ul a:hover {
 }
 
 thead {
-  background: linear-gradient(to right, #212560, #2C2956, #472D6A, #562B59);
+  background: linear-gradient(to right, #472D6A, #2C2956, #212560, #2C2956, #472D6A);
   color: #F8FFFA;
 }
 
-th {
+th, .rank {
   text-align: center;
 }
 
@@ -50,15 +50,8 @@ form {
   margin: 0 0 30px;
 }
 
-.table {
+.table, h6 {
   margin-bottom: 0;
-}
-
-.question-detail {
-  border: solid 1px #212560;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 20px;
 }
 
 .delete, .star, .arrows {
@@ -79,10 +72,6 @@ form {
 .subtitle {
   text-align: center;
   margin: 0;
-}
-
-.rank {
-  text-align: center;
 }
 
 .error {
