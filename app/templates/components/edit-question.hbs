@@ -12,8 +12,8 @@
       <label for="author">Author:</label>
       {{input value=author placeholder=question.author class="form-control"}}
     </div>
-    <button class="btn btn-primary" {{action 'editQuestion' question}}>Save</button>
-    <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
+    <button class="btn btn-primary btn-sm" {{action 'editQuestion' question}}>Save</button>
+    <button class="btn btn-danger btn-sm" {{action 'cancel'}}>Cancel</button>
   </form>
 {{else}}
   <button class="btn btn-warning btn-sm" {{action 'showEditQuestionForm'}}>Edit</button>

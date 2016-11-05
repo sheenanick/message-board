@@ -12,6 +12,12 @@ export default Ember.Component.extend({
     },
     downVote(answer) {
       this.sendAction('downVote', answer);
+    },
+    saveAnswer(params) {
+      this.sendAction('saveAnswer', params);
+    },
+    emptyInput(question) {
+      this.sendAction('emptyInput', question);
     }
   }
 });

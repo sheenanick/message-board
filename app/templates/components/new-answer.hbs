@@ -1,22 +1,20 @@
 {{#if showNewAnswerForm}}
-<div class="well">
-  <h4 class="subtitle">Answer this question</h4>
-  <form>
-    <div class="form-group">
-      <label for="answer">Answer:</label>
-      {{textarea rows="3" value=answer class="form-control"}}
-    </div>
-    <div class="form-group">
-      <label for="author">Author:</label>
-      {{input value=author class="form-control"}}
-    </div>
-    <button class="btn btn-primary" {{action 'saveAnswer'}}>Submit</button>
-    <button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
-  </form>
-  {{#if error}}
-    <h6 class="error">Please fill out all fields.</h6>
-  {{/if}}
-</div>
+<h4 class="subtitle">Answer this question</h4>
+<form>
+  <div class="form-group">
+    <label for="answer">Answer:</label>
+    {{textarea rows="3" value=answer class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Author:</label>
+    {{input value=author class="form-control"}}
+  </div>
+  <button class="btn btn-primary btn-sm" {{action 'saveAnswer'}}>Submit</button>
+  <button class="btn btn-danger btn-sm" {{action 'cancel'}}>Cancel</button>
+</form>
+{{#if error}}
+  <h6 class="error">Please fill out all fields.</h6>
+{{/if}}
 {{else}}
   <button id="answerQuestion" class="btn btn-info" {{action 'showNewAnswerForm'}}>Answer this question</button>
 {{/if}}
