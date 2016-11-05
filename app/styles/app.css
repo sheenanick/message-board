@@ -1,5 +1,6 @@
 body {
   font-family: 'Ubuntu', sans-serif;
+  background-color: #cacbce;
 }
 
 nav a, nav .container-fluid .collapse ul a {
@@ -95,6 +96,7 @@ form {
 #logo {
   height: 35px;
   display: block;
+  margin-top: 30px !important;
   margin: auto;
 }
 
