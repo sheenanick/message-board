@@ -4,6 +4,4 @@
   <p>{{question.notes}}</p>
   {{edit-question question=question editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
 </div>
-{{#if question.answers}}
-  {{answer-tile answers=question.answers question=question deleteAnswer='deleteAnswer' upVote='upVote' downVote='downVote' saveAnswer='saveAnswer' emptyInput='emptyInput'}}
-{{/if}}
+{{answer-tile answers=question.answers question=question deleteAnswer='deleteAnswer' upVote='upVote' downVote='downVote' saveAnswer='saveAnswer' emptyInput='emptyInput'}}

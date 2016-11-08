@@ -1,31 +1,33 @@
 <div class="well table-well">
   {{new-answer question=question saveAnswer='saveAnswer' emptyInput='emptyInput'}}
-  <div class="table-responsive">
-    <table class="table table-bordered">
-       <thead>
-         <tr>
-           <th>Votes</th>
-           <th>Author</th>
-           <th>Answer</th>
-           <th>Delete</th>
-         </tr>
-       </thead>
-       <tbody>
-         {{#each sortedAnswers as |answer|}}
+  {{#if answers}}
+    <div class="table-responsive">
+      <table class="table table-bordered">
+         <thead>
            <tr>
-             <td class="rank">
-               <img class="arrows" src="/icons/up.svg" alt="up arrow" {{action 'upVote' answer}}/>
-               {{answer.votes}}
-               <img class="arrows" src="/icons/down.svg" alt="down arrow" {{action 'downVote' answer}}/>
-             </td>
-             <td>{{answer.author}}</td>
-             <td>{{answer.answer}}</td>
-             <td>
-               <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteAnswer' question answer}}/>
-             </td>
+             <th>Votes</th>
+             <th>Author</th>
+             <th>Answer</th>
+             <th>Delete</th>
            </tr>
-         {{/each}}
-       </tbody>
-     </table>
-  </div>
+         </thead>
+         <tbody>
+           {{#each sortedAnswers as |answer|}}
+             <tr>
+               <td class="rank">
+                 <img class="arrows" src="/icons/up.svg" alt="up arrow" {{action 'upVote' answer}}/>
+                 {{answer.votes}}
+                 <img class="arrows" src="/icons/down.svg" alt="down arrow" {{action 'downVote' answer}}/>
+               </td>
+               <td>{{answer.author}}</td>
+               <td>{{answer.answer}}</td>
+               <td>
+                 <img class="delete" src="/icons/x.png" alt="delete button" {{action 'deleteAnswer' question answer}}/>
+               </td>
+             </tr>
+           {{/each}}
+         </tbody>
+       </table>
+    </div>
+  {{/if}}
 </div>
