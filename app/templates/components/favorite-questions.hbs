@@ -1,7 +1,7 @@
 <div class="well">
   {{#if myFavorites.questions}}
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
+      <div class="col-sm-8 col-sm-offset-2">
         {{#each myFavorites.questions as |question|}}
           {{#link-to 'question' question.id}}<span class="fav-question">{{question.content}}</span>{{/link-to}}
           -- Posted By {{question.author}}<br>
