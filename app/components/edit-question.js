@@ -27,14 +27,5 @@ export default Ember.Component.extend({
     deleteQuestion(question) {
       this.sendAction('deleteQuestion', question);
     },
-    // clearAuthor() {
-    //   $('#edit-author').attr("placeholder", "");
-    // },
-    // clearNotes() {
-    //   $('#edit-notes').attr("placeholder", "");
-    // },
-    // clearContent() {
-    //   $('#edit-content').attr("placeholder", "");
-    // }
   }
 });
