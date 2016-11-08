@@ -19,9 +19,6 @@ export default Ember.Component.extend({
     },
     downVote(answer) {
       this.sendAction('downVote', answer);
-    },
-    emptyInput(question) {
-      this.sendAction('emptyInput', question);
     }
   }
 });

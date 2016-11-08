@@ -15,9 +15,6 @@ export default Ember.Component.extend({
     },
     saveAnswer(params) {
       this.sendAction('saveAnswer', params);
-    },
-    emptyInput(question) {
-      this.sendAction('emptyInput', question);
     }
   }
 });
