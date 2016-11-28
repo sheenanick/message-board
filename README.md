@@ -4,7 +4,7 @@
 
 #### By Sheena Nickerson
 
-This is a question and answer message board application where a user submits a question and other users can respond with answers.
+This is a question and answer message board application where a user submits a question and other users can respond with answers. Users can also star their favorite questions to add them to their favorites list.
 
 ##Technical Specifications
 
@@ -27,15 +27,15 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/sheenanick/message-board` this repository
-* `cd message-board`
+* `git clone https://github.com/sheenanick/message-board` to clone this repository.
+* `cd message-board` to navigate to the cloned project directory.
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `ember serve` to run the application.
+* View [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
 
@@ -53,7 +53,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ## Support and Contact Details
 
-Please feel free to contact me at sheenanick@gmail.com if you have any issues or questions, ideas or concerns.
+Please feel free to contact sheenanick@gmail.com if you have any issues or questions, ideas or concerns.
 
 ## Further Reading / Useful Links
 
@@ -65,6 +65,6 @@ Please feel free to contact me at sheenanick@gmail.com if you have any issues or
 
 ### License
 
-Licensed under GPL.
+Licensed under the MIT license.
 
 Copyright (c) 2016 **_Sheena Nickerson_**
