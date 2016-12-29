@@ -37,6 +37,8 @@ You will need the following things properly installed on your computer.
 * `ember serve` to run the application.
 * View [http://localhost:4200](http://localhost:4200).
 
+This project is also deployed on Heroku and can be viewed [here](https://safe-headland-34471.herokuapp.com/).
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
