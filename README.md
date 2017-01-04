@@ -37,7 +37,7 @@ You will need the following things properly installed on your computer.
 * `ember serve` to run the application.
 * View [http://localhost:4200](http://localhost:4200).
 
-This project is also deployed on Heroku and can be viewed [here](https://safe-headland-34471.herokuapp.com/).
+This project is also deployed on Heroku and can be viewed [here](https://coachella-message-board.herokuapp.com/).
 
 ### Code Generators
 
